@@ -39,10 +39,10 @@ button:disabled {
   .header {
     margin-bottom: 4.8rem; } }
 
-pale-yellow.big-button {
-  background: #ccccff;
+.big-button {
+  background: #ffcccc;
   border: none;
-  border-bottom: 0.6rem solid #9999ff;
+  border-bottom: 0.6rem solid #ff9999;
   color: white;
   font-weight: bold;
   font-size: 3.2rem;
@@ -64,6 +64,12 @@ pale-yellow.big-button {
 @media (min-width: 45rem) {
   .big-button {
     margin-bottom: 4.8rem; } }
+
+.button--link {
+  background: none;
+  border: none;
+  color: #ffccff;
+  padding: 0; }
 
 .widget {
   background: #6666ff;
@@ -126,3 +132,35 @@ pale-yellow.big-button {
     flex-direction: row; }
   .add-option__input {
     margin: 0 1.2rem 0 0; } }
+
+.ReactModalPortal > div {
+  opacity: 0; }
+
+.ReactModalPortal .ReactModal__Overlay {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  transition: opacity 200ms ease-in-out; }
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+  opacity: 1; }
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+  opacity: 0; }
+
+.modal {
+  background: #ffccff;
+  color: #6666ff;
+  max-width: 30rem;
+  outline: none;
+  padding: 3.2rem;
+  text-align: center; }
+
+.modal__title {
+  margin: 0 0 1.6rem 0; }
+
+.modal__body {
+  margin: 0 0 3.2rem 0;
+  font-weight: 300;
+  font-size: 2rem;
+  word-break: break-all; }

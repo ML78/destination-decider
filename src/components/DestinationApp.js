@@ -3,6 +3,7 @@ import Action from './Action';
 import AddOption from './AddOption';
 import Header from './Header';
 import Options from './Options';
+import OptionModal from './OptionModal';
 
 export default class DestinationApp extends Component {
   state = {
@@ -41,6 +42,12 @@ export default class DestinationApp extends Component {
     }));
   }
 
+  handleClearSelectedOption = () => {
+    this.setState(() => ({
+        selectedOption: undefined
+    }));
+}
+
   //lifecycle methods
   componentDidMount(){
     try {
@@ -71,10 +78,10 @@ export default class DestinationApp extends Component {
     }
   }
 
-  // componentWillUnmount(){
-  //   //to see individual options that get removed:
-  //   console.log('componentWillUnmount');
-  // }
+  componentWillUnmount(){
+    //to see individual options that get removed:
+    console.log('componentWillUnmount');
+  }
 
   render(){
       const subtitle = "Can't decide where to go on your next trip?"
@@ -98,9 +105,11 @@ export default class DestinationApp extends Component {
                 handleAddOption={this.handleAddOption}
               />
               </div>
-
           </div>
-
+          <OptionModal
+              selectedOption={this.state.selectedOption}
+              handleClearSelectedOption={this.handleClearSelectedOption}
+              />
         </div>
       );
   }

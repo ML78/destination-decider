@@ -1,9 +1,9 @@
-pale-yellow//Big Button
+//Big Button
 
 .big-button{
-    background: $lavender-blue;
+    background: $pale-red;
     border: none;
-    border-bottom: 0.6rem solid darken($lavender-blue, 10%);
+    border-bottom: 0.6rem solid darken($pale-red, 10%);
     color: white;
     font-weight: bold;
     font-size: $l-size;
@@ -31,4 +31,13 @@ pale-yellow//Big Button
     .big-button {
         margin-bottom: $xl-size;
     }
+}
+
+// bem
+
+.button--link {
+    background: none;
+    border: none;
+    color: $pale-magenta;
+    padding: 0;
 }
