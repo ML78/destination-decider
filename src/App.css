@@ -6,7 +6,13 @@ body {
   font-family: Proxima Nova Soft, Helvetica Neue, sans-serif;
   font-size: 1.6rem; }
 
-.containter {
+button {
+  cursor: pointer; }
+
+button:disabled {
+  cursor: default; }
+
+.container {
   margin: 0 auto;
   max-width: 60rem;
   padding: 0 1.6rem; }
@@ -32,3 +38,91 @@ body {
 @media (min-width: 45rem) {
   .header {
     margin-bottom: 4.8rem; } }
+
+pale-yellow.big-button {
+  background: #ccccff;
+  border: none;
+  border-bottom: 0.6rem solid #9999ff;
+  color: white;
+  font-weight: bold;
+  font-size: 3.2rem;
+  margin-bottom: 1.6rem;
+  padding: 2.4rem;
+  width: 100%; }
+
+.big-button:disabled {
+  opacity: 0.5; }
+
+.button {
+  background: #ccccff;
+  border: none;
+  border-bottom: 0.3rem solid #9999ff;
+  color: white;
+  font-weight: 500;
+  padding: 1.2rem; }
+
+@media (min-width: 45rem) {
+  .big-button {
+    margin-bottom: 4.8rem; } }
+
+.widget {
+  background: #6666ff;
+  margin-bottom: 4.8rem; }
+
+.widget-header {
+  background: #ccffff;
+  color: #6666ff;
+  border-bottom: 0.3rem solid #00cccc;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.6rem; }
+
+.widget-header__title {
+  margin: 0; }
+
+.widget__message {
+  color: #ccccff;
+  margin: 0;
+  padding: 3.2rem;
+  text-align: center;
+  border-bottom: 1px solid #9999ff; }
+
+.option {
+  border-bottom: 1px solid #9999ff;
+  display: flex;
+  justify-content: space-between;
+  padding: 3.2rem 1.6rem; }
+
+.option__text {
+  color: white;
+  font-weight: 500;
+  font-size: 2rem;
+  margin: 0;
+  word-break: break-all; }
+
+.add-option-error {
+  color: #ccccff;
+  font-style: italic;
+  margin: 1.6rem 0 0 0;
+  padding: 0 1.6rem; }
+
+.add-option {
+  display: flex;
+  flex-direction: column;
+  padding: 1.6rem; }
+
+.add-option__input {
+  background: #ffffcc;
+  border: none;
+  color: #6666ff;
+  border-bottom: 0.3rem solid #e6e600;
+  flex-grow: 1;
+  margin: 0 0 1.2rem 0;
+  margin: 0 1.2rem 0 0;
+  padding: 1.2rem; }
+
+@media (min-width: 45rem) {
+  .add-option {
+    flex-direction: row; }
+  .add-option__input {
+    margin: 0 1.2rem 0 0; } }

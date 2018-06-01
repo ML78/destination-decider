@@ -9,3 +9,11 @@ body {
   font-family: Proxima Nova Soft, Helvetica Neue, sans-serif;
   font-size: $m-size
 }
+
+button {
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: default;
+}
