@@ -1,0 +1,11 @@
+// 1rem equals the font size of the html element (most browsers have a default value of 16px);
+
+html {
+  font-size: 62.5%; // 1/16 * 100 * 10
+}
+
+body {
+  background-color: $light-blue;
+  font-family: Proxima Nova Soft, Helvetica Neue, sans-serif;
+  font-size: $m-size
+}
